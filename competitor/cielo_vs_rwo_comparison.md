@@ -34,9 +34,9 @@
 | **Market intelligence for clients** | Internal analytics and dashboards | RW Insights — real-time external market intelligence | **RWO** |
 | **DEI capability** | Yes — structured sourcing and reporting | DEI-aware processes; less structured as a standalone | Cielo |
 | **BFSI governance navigation** | Generalist enterprise approach | Deep — governance-heavy environments; 40 years inside banks | **RWO** |
-| **PE ownership risk** | Yes — Audax Private Equity; exit risk | Part of Recruit Holdings / Robert Walters plc — structural stability | **RWO** |
+| **PE ownership risk** | Yes — Audax Private Equity; exit risk | Part of Robert Walters plc (LSE: RWA) — structural stability | **RWO** |
 | **TIARA Long-Term Partnership Award** | Not documented | Yes — 2024 | **RWO** |
-| **US market presence** | Dominant — primary market | Limited — growth market | Cielo |
+| **US market presence** | Dominant — primary market | Growing — live infrastructure; dedicated US Head of Growth | Cielo (more established US footprint) |
 | **UK market presence** | Strong — second primary market | Strong — primary market | Parity |
 | **Commercial flexibility (BFSI mid-to-large)** | Built for large volume enterprise | More tailored for BFSI enterprise ICP | **RWO** |
 
@@ -82,7 +82,7 @@ The Robert Walters brand in APAC professional markets is a material differentiat
 
 ### 6. PE Ownership and Stability
 
-**RWO wins on structural stability.** Cielo's Audax Private Equity ownership raises legitimate client questions about long-term investment continuity and the risk of disruptive ownership transitions. RWO operates as part of a listed group (Robert Walters plc / Recruit Holdings) — providing structural transparency and long-term commitment that PE-backed competitors cannot always match.
+**RWO wins on structural stability.** Cielo's Audax Private Equity ownership raises legitimate client questions about long-term investment continuity and the risk of disruptive ownership transitions. RWO operates as part of a listed group (Robert Walters plc (LSE: RWA)) — providing structural transparency and long-term commitment that PE-backed competitors cannot always match.
 
 This is a sensitive topic to raise but a legitimate one for clients making 3–5 year outsourcing decisions. Frame it as: "Long-term outsourcing relationships work when both parties are invested in the partnership. We're part of a publicly listed group with a long-term view — our client relationships are measured in decades, not PE investment cycles."
 

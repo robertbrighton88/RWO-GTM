@@ -32,7 +32,7 @@ Cielo is **private equity backed** — owned by Audax Private Equity (a US-based
 - **Positive:** PE backing enables investment in technology, geographic expansion, and acquisitions
 - **Negative:** Clients and prospects sometimes raise questions about long-term stability, exit timelines, and whether client service quality is optimised for delivery or for EBITDA margin ahead of a sale
 
-The PE ownership dynamic is a legitimate competitive angle for RWO — which operates as part of a publicly listed group (Robert Walters plc / now within Recruit Holdings) and can credibly claim longer-term structural stability and investment continuity.
+The PE ownership dynamic is a legitimate competitive angle for RWO — which operates as part of a publicly listed group (Robert Walters plc / listed on the London Stock Exchange (LSE: RWA)) and can credibly claim longer-term structural stability and investment continuity.
 
 ### Scale and Headcount
 

@@ -40,7 +40,7 @@ Your job is to make the conversation about **vendor-neutral independence, BFSI s
 | **Vendor-neutral MSP** | "Our MSP governance framework ensures vendor-neutral supplier selection — the best supplier for every role, regardless of group relationships." | "We understand the governance framework AGS has built. But this is a real question worth asking: is a vendor-neutral MSP genuinely neutral when it's owned by the same group that includes Aerotek and TEKsystems as direct suppliers in the programme? That's a conflict your Risk Committee and procurement governance team will want answered clearly. RWO has no staffing parent. Our supplier selection is unambiguously independent." |
 | **Total Talent Management** | "We offer integrated RPO and MSP under one AGS relationship — permanent and contingent together." | "So do we — and we're an Everest Group Star Performer in CWM/MSP 2025. The difference is that our Total Talent model is built around BFSI specialist professional talent at all levels — permanent hires and specialist contractors. AGS's model is built around enterprise volume across multiple sectors. Which model is better suited to your workforce?" |
 | **Compliance and governance expertise** | "We specialise in complex, compliance-heavy workforce management — AGS is built for regulated environments." | "Compliance governance in workforce management and understanding how banks operate internally are two different things. We're built for both — 40 years of operating inside Tier 1 banks, navigating Risk Committees, managing compliance sign-off for outsourced hiring. AGS's compliance capability is operational governance, not BFSI-specific sector expertise." |
-| **Private ownership stability** | "Allegis Group has been privately held since 1983 — no PE exit risk, long-term family ownership, stable strategic direction." | "Long-term private ownership is a real credential — but it comes with limited financial transparency. We're part of a publicly listed group — Robert Walters plc, part of Recruit Holdings — so our financial performance, investment levels, and strategic priorities are fully transparent. For a BFSI client making a 3–5 year outsourcing commitment inside a regulated institution, that governance transparency matters." |
+| **Private ownership stability** | "Allegis Group has been privately held since 1983 — no PE exit risk, long-term family ownership, stable strategic direction." | "Long-term private ownership is a real credential — but it comes with limited financial transparency. We're part of a publicly listed group — Robert Walters plc (LSE: RWA) — so our financial performance, investment levels, and strategic priorities are fully transparent. For a BFSI client making a 3–5 year outsourcing commitment inside a regulated institution, that governance transparency matters." |
 | **US enterprise relationships** | "Our client base includes some of the world's largest enterprises. We're proven at the scale your organisation operates at." | "AGS is excellent for Fortune 500 multi-sector enterprises. Your organisation is a specialist BFSI enterprise — a bank, asset manager, or insurer with specialist professional hiring needs in the UK and APAC. Those are very different requirements. Our 40 years of BFSI operational depth and near-40-year APAC on-the-ground presence are specifically built for your context, not for a generalised Fortune 500 workforce programme." |
 
 ---
@@ -81,12 +81,12 @@ Use only validated proof points from `context/proof_points.md`:
 
 ## When to Walk Away
 
-AGS is genuinely the better choice — qualify down or walk away — when:
+Walk away — or qualify down — only in these circumstances:
 
-- **Fortune 500 multi-sector enterprise** with very large, diverse contingent workforce primarily in technology and engineering — the Allegis supply chain advantage is real in these categories
-- **US-centric Total Talent Management** at very large enterprise scale — AGS's US infrastructure and enterprise delivery model is materially stronger
-- **Allegis Group relationship** already exists at the account level — TEKsystems or Aerotek relationships that make AGS the natural consolidation play
-- **Non-BFSI sector** where AGS's technology and engineering supply strength is the relevant differentiation
+- **The requirement falls outside RWO's core sector expertise** — BFSI (banking, financial services, insurance) and Pharma & Life Sciences. If the client's primary need is technology, engineering, or industrial contingent workforce management where AGS's Allegis supply chain is genuinely advantaged, RWO's sector depth does not apply.
+- **A commercially viable engagement cannot be structured** for both RWO and the client — if the deal scope, volume, or commercial terms mean RWO cannot deliver quality outcomes profitably, or the client cannot achieve the value they need at a sustainable price point, decline cleanly.
+
+**Do not walk away because AGS has a larger supply chain, stronger US infrastructure, or the Allegis Group relationship.** These create conflicts of interest that RWO should be exposing, not conceding. In BFSI and Pharma, AGS's vendor-non-neutral model is a liability — and RWO's independence is the differentiator.
 
 ---
 

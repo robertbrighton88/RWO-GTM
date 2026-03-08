@@ -28,7 +28,7 @@ The business operates globally as a division of Adecco Group, with significant d
 
 ### Ownership
 
-**Adecco Group** — publicly listed (SIX Swiss Exchange: ADEN). This listed parent structure provides financial transparency and long-term investment stability, comparable to RWO's position within Robert Walters plc / Recruit Holdings.
+**Adecco Group** — publicly listed (SIX Swiss Exchange: ADEN). This listed parent structure provides financial transparency and long-term investment stability, comparable to RWO's position within Robert Walters plc (LSE: RWA).
 
 However, Adecco Group has faced financial performance pressures in recent years — including restructuring programmes and margin challenges in the broader staffing market — and this has created questions about the level of investment directed to Pontoon relative to the core staffing business.
 

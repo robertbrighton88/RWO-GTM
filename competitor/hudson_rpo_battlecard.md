@@ -167,14 +167,12 @@ In markets like Japan and Singapore, the brand running the recruitment programme
 
 ## When RWO Should Walk Away
 
-Be honest internally about these scenarios — chasing the wrong deals wastes everyone's time.
+Walk away — or qualify down — only in these circumstances:
 
-**Walk away when:**
-- The client's mandate is purely Australia-focused, mid-market volume, and they have no current or anticipated need for MSP, advisory, or non-APAC delivery. Hudson is genuinely better set up for this.
-- The client explicitly does not want a large-brand RPO partner and values the boutique, specialist feel that Hudson authentically offers.
-- The deal volume and complexity does not justify RWO's enterprise programme infrastructure — a company hiring 20 professionals a year in APAC does not need 6 global service centres.
-- The budget is not aligned with RWO's quality-positioned pricing and the client's primary decision criterion is cost.
-- The client has strong existing relationship and commercial terms with Hudson RPO and there is no clear dissatisfier to lever — competing on price alone will not serve RWO well.
+- **The requirement falls outside RWO's core sector expertise** — BFSI (banking, financial services, insurance) and Pharma & Life Sciences. If the client's primary sector is not one of these, RWO's specialist differentiation does not apply and competing against a credible quality-led regional provider is the wrong fight.
+- **A commercially viable engagement cannot be structured** for both RWO and the client — if the deal scope, volume, or commercial terms mean RWO cannot deliver quality outcomes profitably, or the client cannot achieve the value they need at a sustainable price point, decline cleanly.
+
+**Do not walk away because Hudson has a stronger regional brand, a more boutique feel, or a better-established relationship.** RWO's BFSI sector depth, multi-geography capability, integrated RPO and MSP, and the Robert Walters candidate brand are genuine advantages in any BFSI or Pharma mandate — regardless of Hudson's incumbency or APAC familiarity.
 
 ---
 

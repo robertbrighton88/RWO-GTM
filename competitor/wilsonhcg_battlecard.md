@@ -78,20 +78,19 @@ Use only validated proof points from `context/proof_points.md`:
 | WilsonHCG leads with human-first | "RWO's workforce consultancy service line grew +51% NFI — the fastest growing part of our business, because human advisory intelligence is what differentiates us from process-only providers." |
 | WilsonHCG leads with quality positioning | "+36% hires per quarter for our European bank client — a quality of outcome, not a process metric. Delivered inside a complex BFSI governance environment that WilsonHCG has not navigated at our depth." |
 | WilsonHCG has no MSP | "Everest Group Star Performer 2025 in CWM/MSP. Your specialist contractor population — compliance, risk, credit — deserves the same specialist quality as your permanent hiring. We manage both. WilsonHCG can only manage one." |
-| WilsonHCG is PE-backed | "We're part of a publicly listed group — Robert Walters plc / Recruit Holdings. No PE exit risk. No uncertainty about strategic priority. Long-term structural stability." |
+| WilsonHCG is PE-backed | "We're part of a publicly listed group — Robert Walters plc (LSE: RWA). No PE exit risk. No uncertainty about strategic priority. Long-term structural stability." |
 | WilsonHCG is thin on APAC | "Nearly 40 years on the ground in Japan, Singapore, and Malaysia. Robert Walters is the leading professional recruitment brand in those markets. That's not a marketing claim — it's a candidate-recognition reality that affects your hiring outcomes from day one." |
 
 ---
 
 ## When to Walk Away
 
-WilsonHCG is genuinely the better choice — qualify down or walk away — when:
+Walk away — or qualify down — only in these circumstances:
 
-- **US-centric RPO** is the dominant requirement and WilsonHCG's North American infrastructure is genuinely stronger
-- **NPS and candidate experience metrics** are the primary procurement criteria and the client has invested specifically in measuring these outcomes
-- **Mid-market, non-BFSI** enterprise where specialist sector depth is not a differentiated requirement and WilsonHCG's quality positioning is sufficient
-- **Employer brand and EVP** are primary buying criteria with a structured service requirement
-- **Existing WilsonHCG relationship** is well-established and delivering — the quality of their delivery is real and disrupting an incumbent relationship is a high bar
+- **The requirement falls outside RWO's core sector expertise** — BFSI (banking, financial services, insurance) and Pharma & Life Sciences. If the client's primary sector is technology, consumer, retail, or another area where RWO has no specialist depth, the differentiation that wins RWO deals does not apply — and competing with a philosophically similar provider without sector advantage is the wrong fight.
+- **A commercially viable engagement cannot be structured** for both RWO and the client — if the deal scope, volume, or commercial terms mean RWO cannot deliver quality outcomes profitably, or the client cannot achieve the value they need at a sustainable price point, decline cleanly.
+
+**Do not walk away because WilsonHCG sounds similar to RWO, has stronger NPS scores, or has a better-established US footprint.** Shared philosophy is not shared capability. Force the conversation into sector depth, APAC infrastructure, MSP capability, and market intelligence — where the gap is decisive and WilsonHCG has no credible response.
 
 ---
 

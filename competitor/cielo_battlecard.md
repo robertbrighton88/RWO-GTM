@@ -84,13 +84,12 @@ Use only validated proof points from `context/proof_points.md`:
 
 ## When to Walk Away
 
-Cielo is genuinely the better choice — and you should qualify down or walk away — when:
+Walk away — or qualify down — only in these circumstances:
 
-- **US is the primary market** and APAC/UK hiring is secondary — Cielo's infrastructure and market presence in North America is decisively stronger
-- **Very high-volume permanent hiring** (thousands of annual hires) with limited specialist or BFSI requirements — Cielo is purpose-built for this
-- **MSP/contingent is explicitly out of scope** — if the client is pure permanent RPO and the contingent workforce is managed elsewhere or not a current priority
-- **CieloBridge specifically** is a requirement — if the client has already evaluated the platform and is committed to it
-- **Everest Group Leader-tier** is a hard procurement committee requirement — RWO's Star Performer standing will not satisfy this if the committee has a minimum tier requirement
+- **The requirement falls outside RWO's core sector expertise** — BFSI (banking, financial services, insurance) and Pharma & Life Sciences. If the client's primary sector is technology, consumer, healthcare operations, or manufacturing, RWO's specialist differentiation does not apply against Cielo's generalist model.
+- **A commercially viable engagement cannot be structured** for both RWO and the client — if the deal scope, volume, or commercial terms mean RWO cannot deliver quality outcomes profitably, or the client cannot achieve the value they need at a sustainable price point, decline cleanly.
+
+**Do not walk away because Cielo has a better analyst ranking, larger headcount, or a more sophisticated technology platform.** Those are not reasons to concede a BFSI or Pharma deal. Compete on sector depth, APAC infrastructure, integrated RPO and MSP capability, and long-term partnership quality — where Cielo has no meaningful response.
 
 ---
 

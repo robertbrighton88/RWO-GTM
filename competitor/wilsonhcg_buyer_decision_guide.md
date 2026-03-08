@@ -92,7 +92,7 @@ If strategic advisory is genuinely part of what you need from an outsourcing par
 
 WilsonHCG is backed by Great Hill Partners (PE). For a 3–5 year outsourcing commitment, PE ownership introduces legitimate risk: exit events create leadership disruption, account team changes, and potential operational resets. This is not inevitable, but it is a factor worth discussing explicitly.
 
-RWO operates within a publicly listed group — Robert Walters plc, part of Recruit Holdings — with transparent governance and a long-term structural commitment. This shared listed-group credential is a differentiator from PE-backed competitors.
+RWO operates within a publicly listed group — Robert Walters plc (LSE: RWA) — with transparent governance and a long-term structural commitment. This shared listed-group credential is a differentiator from PE-backed competitors.
 
 ---
 

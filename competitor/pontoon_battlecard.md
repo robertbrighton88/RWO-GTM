@@ -39,7 +39,7 @@ Your job is to make the conversation about **specialist quality, BFSI sector dep
 | **Automation and technology** | "We're automation-first — AI-powered sourcing, predictive analytics, spend management. We invest heavily in technology." | "We've also invested in AI-powered delivery through RW Plus. But our technology differentiator is client-facing: RW Insights gives your TA leadership real-time external market intelligence — talent pool data, salary benchmarking, competitor hiring signals — not just internal programme reporting. What does your TA leadership actually need from a technology partner?" |
 | **Direct sourcing** | "We can build you a direct sourcing model — a private contractor talent community that reduces your dependency on agencies and lowers cost." | "Direct sourcing is a valuable model and worth exploring for certain contractor populations. For your specialist BFSI contractors — the compliance and risk professionals where quality and relationship matter — the Robert Walters professional network is a better source than a direct sourcing community built from scratch. We can discuss the right model for each segment of your contingent workforce." |
 | **Adecco supply chain for MSP** | "Our MSP is underpinned by one of the world's largest staffing supply chains — you get volume, consistency, and commercial leverage." | "The Adecco supply chain is very broad. For a BFSI MSP, the supply chain quality question is: how many of their suppliers specialise in risk, compliance, credit, and financial services technology? Breadth without specialist depth means you get a lot of CVs and not necessarily the right ones. Our supply base is oriented around specialist professional hiring — which is what a BFSI MSP programme actually needs to perform." |
-| **Stability via listed parent** | "Adecco Group is publicly listed — we offer long-term investment stability." | "We share that — RWO is part of Robert Walters plc, part of the Recruit Holdings group, also publicly listed. So ownership stability is a shared credential, not a differentiator. Let's talk about what actually differentiates us: sector depth, APAC quality, and the specialist professional network that backs our delivery." |
+| **Stability via listed parent** | "Adecco Group is publicly listed — we offer long-term investment stability." | "We share that — RWO is part of Robert Walters plc, listed on the London Stock Exchange (LSE: RWA), also publicly listed. So ownership stability is a shared credential, not a differentiator. Let's talk about what actually differentiates us: sector depth, APAC quality, and the specialist professional network that backs our delivery." |
 
 ---
 
@@ -72,19 +72,19 @@ Use only validated proof points from `context/proof_points.md`:
 | Pontoon leads with MSP/CWM | "Everest Group Star Performer in CWM/MSP 2025 — we compete at the highest level on contingent workforce, with a supply base built specifically for specialist professional hiring." |
 | Pontoon leads with Total Talent | "We've had integrated RPO and MSP as a core proposition for years — it's not a positioning exercise for us, it's how we operate. Fastest-growing service line is Talent Advisory, up +51% NFI." |
 | Pontoon leads with technology | "RW Insights gives your TA leadership real-time market intelligence — external talent data, not just internal programme dashboards." |
-| Pontoon leads with stability | "We share the listed parent credential — Recruit Holdings / Robert Walters plc is publicly listed and financially transparent. What differentiates us is specialist depth, not ownership structure." |
+| Pontoon leads with stability | "We share the listed parent credential — Robert Walters plc (LSE: RWA) is publicly listed and financially transparent. What differentiates us is specialist depth, not ownership structure." |
 | Pontoon leads on APAC | "Nearly 40 years on the ground in Japan, Singapore, and Malaysia — Robert Walters is the leading professional recruitment brand in these markets. TIARA Long-Term Partnership Award 2024." |
 
 ---
 
 ## When to Walk Away
 
-Pontoon is genuinely the better choice — and you should qualify down or walk away — when:
+Walk away — or qualify down — only in these circumstances:
 
-- **Very large enterprise contingent workforce programmes** spanning multiple non-BFSI sectors simultaneously — where the Adecco supply chain breadth is a genuine material advantage
-- **US is the primary market** and the Adecco/Pontoon US infrastructure outweighs RWO's limited US presence
-- **Direct sourcing** of large generalist contractor populations is the primary commercial requirement and the client has invested in this model
-- **Adecco Group relationship** already exists at a group level and expanding to Pontoon is a procurement consolidation decision rather than a competitive evaluation
+- **The requirement falls outside RWO's core sector expertise** — BFSI (banking, financial services, insurance) and Pharma & Life Sciences. If the client's contingent workforce programme spans technology, manufacturing, retail, or other non-specialist sectors as its primary scope, RWO's sector depth is not the relevant differentiator.
+- **A commercially viable engagement cannot be structured** for both RWO and the client — if the deal scope, volume, or commercial terms mean RWO cannot deliver quality outcomes profitably, or the client cannot achieve the value they need at a sustainable price point, decline cleanly.
+
+**Do not walk away because Pontoon has a larger supply chain, stronger US infrastructure, or deeper Adecco Group relationships.** These are competitive realities to acknowledge and redirect, not reasons to concede a BFSI or Pharma mandate. Compete on sector quality, APAC depth, and independence from the supply chain conflicts that define Pontoon's model.
 
 ---
 

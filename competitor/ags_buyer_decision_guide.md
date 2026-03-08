@@ -78,7 +78,7 @@ AGS's APAC infrastructure is primarily based in India — an offshore delivery h
 
 Allegis Group is privately held. There is no public financial reporting — no revenue trends, no investment signal, no strategic priority data available for client due diligence. For a BFSI enterprise making a 3–5 year outsourcing commitment inside a regulated institution, the absence of public financial disclosure is a governance consideration.
 
-RWO operates within publicly listed groups (Robert Walters plc / Recruit Holdings) — providing full financial transparency and governance visibility over the life of the contract.
+RWO operates within publicly listed groups (Robert Walters plc (LSE: RWA)) — providing full financial transparency and governance visibility over the life of the contract.
 
 ---
 

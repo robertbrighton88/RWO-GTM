@@ -18,7 +18,7 @@
 
 | Dimension | AGS | RWO | Advantage |
 |---|---|---|---|
-| **Parent scale** | Allegis Group — one of world's largest private staffing groups | Robert Walters plc / Recruit Holdings | AGS (parent breadth) |
+| **Parent scale** | Allegis Group — one of world's largest private staffing groups | Robert Walters plc (LSE: RWA) | AGS (parent breadth) |
 | **Ownership transparency** | Privately held — limited financial visibility | Publicly listed — full transparency | **RWO** |
 | **RPO capability** | Full RPO, Project RPO — enterprise focus | Full RPO, Project RPO, Modular RPO | Parity |
 | **MSP / Contingent Workforce** | Core and mature capability | Yes — Everest Group Star Performer 2025 | AGS (scale); RWO (BFSI specialist supply) |
@@ -34,7 +34,7 @@
 | **Talent advisory (standalone)** | [Inferred] embedded; not a commercial line | Fastest growing service line (+51% NFI) | **RWO** |
 | **Technology supply (TEKsystems/Aerotek)** | Material advantage for tech/engineering MSP | Robert Walters specialist professional supply | AGS (tech/eng); RWO (BFSI specialist) |
 | **BFSI governance navigation** | Compliance governance capability; operational-grade | Deep — 40 years operating inside regulated banks | **RWO** |
-| **US market presence** | Dominant | Limited — growth market | AGS |
+| **US market presence** | Dominant | Growing — live infrastructure; dedicated US Head of Growth | AGS (more established US footprint) |
 | **UK market presence** | Established | Strong — primary market | Parity |
 | **TIARA Long-Term Partnership Award** | Not documented | Yes — 2024 | **RWO** |
 
@@ -76,7 +76,7 @@ RWO has no staffing parent conflict. Robert Walters Group's recruitment business
 
 ### 6. Ownership Transparency
 
-**RWO wins.** AGS's private ownership limits financial visibility — clients cannot verify revenue trends, investment levels, or strategic priorities through public reporting. RWO's position within publicly listed groups (Robert Walters plc / Recruit Holdings) provides full financial transparency and governance visibility over a multi-year outsourcing relationship.
+**RWO wins.** AGS's private ownership limits financial visibility — clients cannot verify revenue trends, investment levels, or strategic priorities through public reporting. RWO's position within publicly listed groups (Robert Walters plc (LSE: RWA)) provides full financial transparency and governance visibility over a multi-year outsourcing relationship.
 
 ---
 

@@ -39,7 +39,7 @@ Your job is to make the conversation about **specialist quality vs. volume throu
 | **Employer brand (TMP Worldwide)** | "We offer employer brand, EVP, and digital recruitment marketing alongside our RPO delivery — a genuine differentiated combination." | "Employer brand matters. In APAC professional markets — where a significant portion of your BFSI hiring sits — the most powerful employer brand is already built: Robert Walters. In Tokyo, Singapore, and Hong Kong, specialist candidates respond to the Robert Walters name in a way no EVP exercise replicates. For US hiring, TMP's digital capability is relevant — but is that where your specialist challenge sits?" |
 | **US and UK breadth** | "Our US and UK delivery infrastructure is among the strongest in the market. If your primary hiring is in these markets, we're the right partner." | "UK is a strength we share — it's our primary market and we're deeply resourced there. For US hiring, PeopleScout's infrastructure is stronger — we're open about that. The question is where your most complex and strategically important BFSI hiring sits. For London, Tokyo, Singapore, and Hong Kong — where specialist BFSI talent markets are deepest and most competitive — our on-the-ground expertise over 40 years is the decisive advantage." |
 | **HRO Today Baker's Dozen** | "Our consistent Baker's Dozen recognition proves our clients rate us highly at scale." | "The Baker's Dozen is a meaningful benchmark and we respect PeopleScout's standing. Our TIARA Long-Term Partnership Award 2024 reflects a different quality dimension — client partnership satisfaction over years inside complex BFSI outsourcing relationships. Both metrics matter; the question is which one best predicts success in your specific programme." |
-| **Listed parent stability** | "TrueBlue is publicly listed — long-term investment stability and financial transparency." | "We share that credential — Robert Walters plc is part of the Recruit Holdings group, also listed. So ownership stability is a shared baseline, not a differentiator. What differentiates us is BFSI specialist depth, APAC expertise, and integrated RPO + MSP — none of which PeopleScout offers." |
+| **Listed parent stability** | "TrueBlue is publicly listed — long-term investment stability and financial transparency." | "We share that credential — Robert Walters plc is listed on the London Stock Exchange (LSE: RWA). So ownership stability is a shared baseline, not a differentiator. What differentiates us is BFSI specialist depth, APAC expertise, and integrated RPO + MSP — none of which PeopleScout offers." |
 
 ---
 
@@ -82,13 +82,12 @@ Use only validated proof points from `context/proof_points.md`:
 
 ## When to Walk Away
 
-PeopleScout is genuinely the better choice — qualify down or walk away — when:
+Walk away — or qualify down — only in these circumstances:
 
-- **High-volume, operational-grade BFSI hiring** (contact centre, branch banking, insurance operations) is the primary requirement — PeopleScout's volume model is better suited
-- **Affinix platform specifically** is a procurement requirement — e.g., client has evaluated it separately and is committed
-- **US-centric RPO** at volume is the primary mandate — PeopleScout's infrastructure is stronger
-- **Employer brand and digital recruitment marketing** are primary requirements alongside RPO delivery — TMP Worldwide capability is genuine
-- The client is explicitly **not a BFSI specialist mandate** — technology, consumer, or healthcare volume hiring where PeopleScout's sector mix is irrelevant
+- **The requirement falls outside RWO's core sector expertise** — BFSI (banking, financial services, insurance) and Pharma & Life Sciences. If the client's primary need is volume hiring in technology, consumer, healthcare operations, or another sector where RWO has no specialist depth, PeopleScout's generalist volume model may genuinely be a better fit — and there is no competitive value in pursuing it.
+- **A commercially viable engagement cannot be structured** for both RWO and the client — if the deal scope, volume, or commercial terms mean RWO cannot deliver quality outcomes profitably, or the client cannot achieve the value they need at a sustainable price point, decline cleanly.
+
+**Do not walk away because PeopleScout has a more sophisticated technology platform, stronger US infrastructure, or better employer brand capabilities.** These are not reasons to concede a specialist BFSI or Pharma mandate. RWO's sector depth, APAC infrastructure, and quality of hire track record are exactly where PeopleScout's volume-first model falls short.
 
 ---
 

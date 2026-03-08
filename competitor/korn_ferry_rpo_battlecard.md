@@ -83,12 +83,12 @@ Use only validated proof points from `context/proof_points.md`:
 
 ## When to Walk Away
 
-Korn Ferry RPO is genuinely the better choice — and you should qualify down or walk away — when:
+Walk away — or qualify down — only in these circumstances:
 
-- **The mandate is senior and leadership hiring only** — Director, VP, and C-suite — and assessment integration and succession calibration are the primary value drivers; Korn Ferry's model is genuinely better suited
-- **The Korn Ferry exec search relationship is deeply embedded** — if the CHRO and CPO relationship with Korn Ferry is 5+ years strong and expanding to RPO is a board-level decision, competing against that relationship inertia is extremely difficult
-- **Workforce analytics and leadership intelligence** are the primary buying criteria — if the client is seeking a talent intelligence partner rather than an outsourced delivery function, Korn Ferry's advisory depth is superior
-- **Budget is explicitly premium** and assessment-led quality is the primary evaluation criterion — the client has articulated that they want the most sophisticated assessment model regardless of cost
+- **The requirement falls outside RWO's core sector expertise** — BFSI (banking, financial services, insurance) and Pharma & Life Sciences. If the client's primary sector is technology, industrial, consumer, or another area where RWO has no specialist depth, RWO's differentiation does not apply against Korn Ferry's broader advisory model.
+- **A commercially viable engagement cannot be structured** for both RWO and the client — if the deal scope, fee model, or commercial terms mean RWO cannot deliver quality outcomes profitably, or the client cannot achieve the value they need at a sustainable price point, decline cleanly.
+
+**Do not walk away because Korn Ferry has a stronger executive search brand, a more sophisticated assessment framework, or deeper board-level relationships.** These are competitive challenges to navigate, not reasons to concede. RWO wins on operational BFSI delivery, APAC infrastructure, integrated RPO and MSP, and cost-effective specialist quality — dimensions where Korn Ferry RPO consistently underdelivers.
 
 ---
 

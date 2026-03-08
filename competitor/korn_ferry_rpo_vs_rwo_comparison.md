@@ -32,7 +32,7 @@
 | **Talent Advisory (strategic)** | Deep — workforce analytics, succession, leadership dev | Growing fast (+51% NFI); market intelligence | Korn Ferry (strategic depth); RWO (operational advisory) |
 | **Pricing** | Most premium in RPO market | Premium but RPO-market aligned | **RWO** (for budget-conscious enterprise) |
 | **Commercial flexibility** | Exec search culture; less flexible on pricing | More structured for RPO commercial models | **RWO** |
-| **Ownership and stability** | Publicly listed (NYSE: KFY) | Part of Recruit Holdings / Robert Walters plc (listed) | Parity |
+| **Ownership and stability** | Publicly listed (NYSE: KFY) | Part of Robert Walters plc (LSE: RWA) (listed) | Parity |
 | **Candidate brand for specialist professional roles** | Korn Ferry recognised at senior; weaker mid-level | Robert Walters — strong at mid-to-senior specialist | **RWO** |
 | **TIARA Long-Term Partnership Award** | Not documented | Yes — 2024 | **RWO** |
 | **BFSI governance navigation** | Leadership-level process; weaker below MD tier | Deep across all grades; risk/compliance governance expertise | **RWO** |
@@ -91,7 +91,7 @@ RWO's delivery model spans the entire hiring range — from graduate to senior p
 
 ### 8. Both Are Listed Companies
 
-**Parity on ownership structure.** Unlike PE-backed competitors (Cielo/Audax), both Korn Ferry (NYSE: KFY) and RWO (part of Recruit Holdings / Robert Walters plc) operate within publicly listed, financially transparent structures. Neither has a meaningful advantage here.
+**Parity on ownership structure.** Unlike PE-backed competitors (Cielo/Audax), both Korn Ferry (NYSE: KFY) and RWO (part of Robert Walters plc (LSE: RWA)) operate within publicly listed, financially transparent structures. Neither has a meaningful advantage here.
 
 ---
 

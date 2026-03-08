@@ -16,8 +16,8 @@
 
 | Dimension | Pontoon | RWO | Advantage |
 |---|---|---|---|
-| **Parent company scale** | Adecco Group (world's largest staffing group) | Robert Walters plc / Recruit Holdings | Pontoon |
-| **Listed parent stability** | Yes — Adecco Group (SIX: ADEN) | Yes — Robert Walters plc / Recruit Holdings | Parity |
+| **Parent company scale** | Adecco Group (world's largest staffing group) | Robert Walters plc (LSE: RWA) | Pontoon |
+| **Listed parent stability** | Yes — Adecco Group (SIX: ADEN) | Yes — Robert Walters plc (LSE: RWA) | Parity |
 | **RPO capability** | Full RPO, Project RPO — growing | Full RPO, Project RPO, Modular RPO | RWO edge |
 | **MSP / Contingent Workforce** | Core strength; large enterprise scale | Yes — Everest Group Star Performer 2025 | Pontoon (scale); RWO (specialist depth) |
 | **Total Talent Management** | Yes — RPO + MSP positioning | Yes — integrated partnership | Parity |

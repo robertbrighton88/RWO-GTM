@@ -84,15 +84,12 @@ Use only validated proof points from `context/proof_points.md`:
 
 ## When to Walk Away
 
-AMS is genuinely the better choice — and you should walk away or qualify down — when:
+Walk away — or qualify down — only in these circumstances:
 
-- The client needs **truly global delivery** across 30+ countries simultaneously, including US and EMEA markets outside the UK, where RWO has limited infrastructure
-- **Total Talent Management** across permanent, contingent, and SOW is the primary requirement and the client has the organisational maturity to adopt it
-- **DEI programme reporting** is a primary procurement criterion being evaluated by a committee with formal DEI governance obligations
-- The client is **Fortune 500 scale** with very high-volume (thousands of hires annually) across multiple sectors and geographies — not a BFSI specialist requirement
-- The client explicitly requires **Everest Group Leader-tier** analyst validation to pass their procurement committee and you cannot make the case for RWO's Star Performer standing
+- **The requirement falls outside RWO's core sector expertise** — BFSI (banking, financial services, insurance) and Pharma & Life Sciences. If the client's primary sector is technology, consumer, retail, manufacturing, or another area where RWO has no specialist depth, the differentiation that wins RWO deals does not apply. Do not chase generalist mandates against a generalist competitor.
+- **A commercially viable engagement cannot be structured** for both RWO and the client — if the deal scope, volume, or commercial terms mean RWO cannot deliver quality outcomes profitably, or the client cannot achieve the value they need at a sustainable price point, the right answer is to decline cleanly.
 
-**Do not win business you cannot serve well.** If a deal is fundamentally an AMS deal, withdrawing with professionalism — and flagging it to the prospect openly — builds more long-term credibility than winning and underdelivering.
+**Do not walk away because AMS is bigger, better-ranked by analysts, or offers capabilities you cannot match.** AMS's scale and breadth are real — they are not a reason to concede. RWO's value is specialist depth in BFSI and Pharma, and on-the-ground APAC infrastructure that AMS cannot replicate at quality. Compete on your ground.
 
 ---
 

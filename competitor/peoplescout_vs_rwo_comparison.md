@@ -31,8 +31,8 @@
 | **Talent advisory (standalone)** | [Inferred] embedded in delivery | Fastest growing service line (+51% NFI) | **RWO** |
 | **BFSI governance navigation** | Generalist; operational BFSI orientation | Deep — 40 years inside regulated banks | **RWO** |
 | **TrueBlue parent brand** | Industrial staffing heritage — undermines professional positioning | Robert Walters Group — specialist professional brand | **RWO** |
-| **Listed parent stability** | Yes — TrueBlue (NYSE: TBI) | Yes — Recruit Holdings / Robert Walters plc | Parity |
-| **US market presence** | Strong — primary market | Limited — growth market | PeopleScout |
+| **Listed parent stability** | Yes — TrueBlue (NYSE: TBI) | Yes — Robert Walters plc (LSE: RWA) | Parity |
+| **US market presence** | Strong — primary market | Growing — live infrastructure; dedicated US Head of Growth | PeopleScout (more established US footprint) |
 | **UK market presence** | Established — strong second market | Strong — primary market | Parity |
 | **Commercial pricing (volume)** | Competitive at high volume | Premium for specialist quality | PeopleScout at volume |
 | **TIARA Long-Term Partnership Award** | Not documented | Yes — 2024 | **RWO** |

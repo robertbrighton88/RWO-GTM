@@ -28,7 +28,7 @@ Headquartered in Chicago, Illinois, PeopleScout has grown through organic expans
 
 ### Ownership
 
-**TrueBlue, Inc.** — publicly listed (NYSE: TBI). Listed parent structure provides financial transparency comparable to RWO's position within Robert Walters plc / Recruit Holdings.
+**TrueBlue, Inc.** — publicly listed (NYSE: TBI). Listed parent structure provides financial transparency comparable to RWO's position within Robert Walters plc (LSE: RWA).
 
 TrueBlue's broader portfolio is heavily weighted toward industrial and operational staffing — which creates a similar brand association challenge to Pontoon's Adecco problem: PeopleScout is the RPO brand within a parent company primarily known for light industrial and blue-collar staffing. In specialist professional markets, the TrueBlue parentage is not a selling point.
 

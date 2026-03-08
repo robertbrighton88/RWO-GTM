@@ -84,7 +84,7 @@ Cielo's advisory capability is embedded in delivery rather than offered as a dis
 
 Cielo is owned by Audax Private Equity — a US mid-market PE firm. PE-backed businesses are oriented toward an exit event (IPO, strategic sale, secondary PE deal), which creates risk of leadership disruption, operational restructuring, and service continuity uncertainty at the point of transaction. This is not a certainty, but it is a legitimate consideration for clients making 3–5 year outsourcing commitments.
 
-RWO operates as part of Robert Walters plc (now within the Recruit Holdings group) — a publicly listed structure with a long-term investment horizon and transparent governance. If ownership stability over the life of your contract matters, this distinction is worth exploring with both providers.
+RWO operates as part of Robert Walters plc (listed on the London Stock Exchange (LSE: RWA)) — a publicly listed structure with a long-term investment horizon and transparent governance. If ownership stability over the life of your contract matters, this distinction is worth exploring with both providers.
 
 ---
 

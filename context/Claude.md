@@ -23,8 +23,8 @@ Each file has a defined purpose. Reference the relevant file(s) before generatin
 ### `company.md`
 **Foundation file. Read first for any output.**
 - Use for: company overview, structure, scale, geography, sector focus, 2024 strategic context
-- Contains the authoritative description of what RWO is, how it sits within Robert Walters Group, and its primary markets (UK and Asia Pacific) and growth markets (EMEA and US)
-- BFSI is the primary sector. Do not position RWO as a generalist provider.
+- Contains the authoritative description of what RWO is, how it sits within Robert Walters Group, and its primary markets (UK and Asia Pacific) and active markets (EMEA and US — live infrastructure; dedicated US Head of Growth in role)
+- BFSI is the primary sector; Pharma & Life Sciences is the confirmed second core sector (clients include Bayer, Boehringer Ingelheim, Merck). Do not position RWO as a generalist provider.
 
 ### `services.md`
 **Authoritative list of RWO's capabilities. Do not invent services.**
@@ -35,7 +35,7 @@ Each file has a defined purpose. Reference the relevant file(s) before generatin
 
 ### `icp.md`
 **Use for: defining who RWO sells to.**
-- Target customers are BFSI enterprises (banking, financial services, insurance) — primarily in the UK and Asia Pacific, with EMEA and US as growth markets
+- Target customers are BFSI enterprises (banking, financial services, insurance) and Pharma & Life Sciences enterprises — primarily in the UK and Asia Pacific, with EMEA and US as active growth markets (live US infrastructure in place)
 - Firmographic, situational, psychographic, and geographic ICP criteria are all defined here
 - Do not expand the ICP beyond what is documented. Public sector is explicitly out of ICP.
 
@@ -58,10 +58,32 @@ Each file has a defined purpose. Reference the relevant file(s) before generatin
 
 ### `competitive_positioning.md`
 **Use for: differentiation, competitor comparisons, positioning statements.**
-- Contains competitor profiles (Cielo, AMS, Randstad Sourceright, Korn Ferry RPO, Pontoon, Hudson RPO, PeopleScout), RWO's differentiators, vulnerabilities, and analyst positioning
+- Contains competitor profiles (Cielo, AMS, Randstad Sourceright, Korn Ferry RPO, Pontoon, Hudson RPO, PeopleScout, WilsonHCG, AGS), RWO's differentiators, vulnerabilities, and analyst positioning
 - The "building inside banks" differentiator is a key, documented insight — use it in BFSI-specific content
 - Do not claim RWO is ranked higher than documented in analyst reports (currently Star Performer, not Leader, in Everest Group CWM/MSP PEAK Matrix 2025)
 - Vulnerabilities are documented honestly — do not obscure or contradict them
+
+### `../competitor/` — Deep Dive Competitor Research Folder
+**Use for: detailed competitive intelligence on each primary competitor.**
+- Contains full intelligence profiles for all nine primary competitors, compiled August 2025
+- Files follow a consistent structure: service architecture, positioning, analyst standing, geography, technology, market perception, recent news, commercial model, and sales battlecard
+- Points marked [Inferred] are reasonable inferences from public signals — not verified facts. Live web research should be used to confirm before relying on these in proposals.
+- When generating battlecards, objection handling, or competitive content, check both `competitive_positioning.md` and the relevant `../competitor/` deep dive file
+
+**Completed competitor packages (4 files each):**
+| Competitor | Deep Dive | Comparison | Battlecard | Buyer Decision Guide |
+|---|---|---|---|---|
+| AMS (Alexander Mann Solutions) | `ams_deep_dive.md` | `ams_vs_rwo_comparison.md` | `ams_battlecard.md` | `ams_buyer_decision_guide.md` |
+| Cielo | `cielo_deep_dive.md` | `cielo_vs_rwo_comparison.md` | `cielo_battlecard.md` | `cielo_buyer_decision_guide.md` |
+| Randstad Sourceright | `randstad_sourceright_deep_dive.md` | `randstad_sourceright_vs_rwo_comparison.md` | `randstad_sourceright_battlecard.md` | `randstad_sourceright_buyer_decision_guide.md` |
+| Korn Ferry RPO | `korn_ferry_rpo_deep_dive.md` | `korn_ferry_rpo_vs_rwo_comparison.md` | `korn_ferry_rpo_battlecard.md` | `korn_ferry_rpo_buyer_decision_guide.md` |
+| Hudson RPO | `hudson_rpo_deep_dive.md` | `hudson_rpo_vs_rwo_comparison.md` | `hudson_rpo_battlecard.md` | `hudson_rpo_buyer_decision_guide.md` |
+| Pontoon | `pontoon_deep_dive.md` | `pontoon_vs_rwo_comparison.md` | `pontoon_battlecard.md` | `pontoon_buyer_decision_guide.md` |
+| WilsonHCG | `wilsonhcg_deep_dive.md` | `wilsonhcg_vs_rwo_comparison.md` | `wilsonhcg_battlecard.md` | `wilsonhcg_buyer_decision_guide.md` |
+| PeopleScout | `peoplescout_deep_dive.md` | `peoplescout_vs_rwo_comparison.md` | `peoplescout_battlecard.md` | `peoplescout_buyer_decision_guide.md` |
+| AGS (Allegis Global Solutions) | `ags_deep_dive.md` | `ags_vs_rwo_comparison.md` | `ags_battlecard.md` | `ags_buyer_decision_guide.md` |
+
+**Note:** AMS (Alexander Mann Solutions) and AGS (Allegis Global Solutions) are separate, unrelated companies. Do not conflate them.
 
 ### `objections.md`
 **Use for: handling sales objections.**
@@ -123,6 +145,9 @@ Do not generate content targeting sectors, company sizes, or geographies outside
 
 **3.5 Buying stage awareness.**
 When generating outbound content, always establish which buying stage the prospect is in before writing. Content for an unaware prospect must not read like content for a prospect in active evaluation. Reference `outbound.md` for stage-specific guidance.
+
+**3.6 Walk-away criteria.**
+When generating battlecards or competitive content, the only valid reasons to recommend walking away from a deal are: (1) the requirement falls outside RWO's core sector expertise (BFSI and Pharma & Life Sciences), or (2) a commercially viable engagement cannot be structured for both RWO and the client. Do not recommend walking away because a competitor is larger, better-ranked by analysts, or offers capabilities RWO cannot match. RWO competes on specialist depth — not breadth.
 
 ---
 

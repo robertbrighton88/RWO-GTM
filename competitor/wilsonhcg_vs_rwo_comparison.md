@@ -46,8 +46,8 @@ This similarity is the key competitive risk: buyers may hear both pitches and se
 | **Employer brand services** | Yes — a service component | [Inferred] embedded; not standalone | WilsonHCG edge |
 | **BFSI governance navigation** | Generalist enterprise approach | Deep — 40 years inside regulated banks | **RWO** |
 | **Commercial flexibility (mid-market)** | Yes — serves mid-market | Yes — BFSI mid-to-large enterprise | Parity |
-| **Ownership stability** | PE-backed (Great Hill Partners) | Listed group — Robert Walters plc / Recruit Holdings | **RWO** |
-| **US market presence** | Strong — primary market | Limited — growth market | WilsonHCG |
+| **Ownership stability** | PE-backed (Great Hill Partners) | Listed group — Robert Walters plc (LSE: RWA) | **RWO** |
+| **US market presence** | Strong — primary market | Growing — live infrastructure; dedicated US Head of Growth | WilsonHCG (more established US footprint) |
 | **UK market presence** | Established — second market | Strong — primary market | Parity |
 
 ---

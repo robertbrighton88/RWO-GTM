@@ -189,17 +189,12 @@ These are legitimate concerns to surface in buyer conversations — frame as "qu
 
 ## When RWO Should Walk Away
 
-Honest competitive intelligence includes knowing when Randstad Sourceright is genuinely the better choice for the client. Walking away from the wrong deals is a competitive advantage — it protects RWO's quality positioning and builds long-term trust.
+Walk away — or qualify down — only in these circumstances:
 
-**Walk away if:**
-- The client's primary requirement is true Total Talent Management for a 50,000+ employee global enterprise operating in 30+ countries simultaneously — Sourceright's infrastructure is better suited to this scope than RWO currently
-- MSP / contingent workforce management is the dominant requirement (not RPO) — Sourceright's MSP depth exceeds RWO's at enterprise scale
-- The client has no BFSI or APAC dimension — outside RWO's strongest positioning territory
-- The client explicitly wants a provider with Leader-tier analyst recognition across both RPO and MSP, and will not accept Star Performer equivalence — this is a procurement bias that RWO cannot currently overcome on analyst paper
-- The client already has deep Randstad Group relationships across multiple markets and the commercial consolidation logic is genuinely compelling for procurement
-- The client is predominantly North America or European with no APAC component — Sourceright is better established in those markets
+- **The requirement falls outside RWO's core sector expertise** — BFSI (banking, financial services, insurance) and Pharma & Life Sciences. If the client's primary need is multi-sector Total Talent Management across retail, technology, consumer, or other non-specialist areas, RWO's differentiation does not apply against Sourceright's generalist TTM model.
+- **A commercially viable engagement cannot be structured** for both RWO and the client — if the deal scope, volume, or commercial terms mean RWO cannot deliver quality outcomes profitably, or the client cannot achieve the value they need at a sustainable price point, decline cleanly.
 
-**Walk away from the deal cleanly.** Say: "Based on what you've shared, we think Randstad Sourceright's TTM infrastructure may be a better fit for your specific scope. But we'd be delighted to be in conversation when your APAC requirements grow, or when you want a specialist BFSI RPO partner in markets where brand quality really matters."
+**Do not walk away because Randstad Sourceright has a better analyst ranking, deeper Total Talent Management infrastructure, or stronger global scale.** These are competitive realities to reframe, not reasons to concede a BFSI or Pharma mandate. RWO wins on sector depth, APAC quality, candidate brand, and partnership — where Sourceright's generalist model cannot match specialist delivery.
 
 ---
 
