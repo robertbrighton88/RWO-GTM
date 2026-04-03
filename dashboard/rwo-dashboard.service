@@ -1,0 +1,15 @@
+[Unit]
+Description=RWO GTM Command Center Dashboard
+After=network.target
+
+[Service]
+Type=simple
+User=rwo
+WorkingDirectory=/home/rwo/RWO-GTM/dashboard
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=10
+EnvironmentFile=/home/rwo/RWO-GTM/.env
+
+[Install]
+WantedBy=multi-user.target

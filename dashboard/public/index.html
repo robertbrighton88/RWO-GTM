@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RWO GTM Command Center</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .status-ok { background: #22c55e; }
+    .status-stale { background: #f59e0b; }
+    .status-old { background: #ef4444; }
+    .status-never { background: #6b7280; }
+    .prose h1, .prose h2, .prose h3 { font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem; }
+    .prose p { margin-bottom: 0.75rem; line-height: 1.6; }
+    .prose ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.75rem; }
+    .prose li { margin-bottom: 0.25rem; }
+    .prose strong { font-weight: 600; }
+    .prose table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; font-size: 0.85rem; }
+    .prose th { background: #1e293b; padding: 0.5rem; text-align: left; border: 1px solid #334155; }
+    .prose td { padding: 0.5rem; border: 1px solid #334155; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen">
+
+  <!-- Login Screen -->
+  <div id="login-screen" class="hidden fixed inset-0 bg-slate-900 flex items-center justify-center z-50">
+    <div class="bg-slate-800 rounded-2xl p-10 w-full max-w-sm shadow-2xl border border-slate-700">
+      <div class="text-center mb-8">
+        <div class="inline-flex items-center justify-center w-14 h-14 bg-blue-600 rounded-xl mb-4">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+        </div>
+        <h1 class="text-xl font-bold text-white">RWO GTM</h1>
+        <p class="text-slate-400 text-sm mt-1">Command Center</p>
+      </div>
+      <input id="password-input" type="password" placeholder="Password"
+        class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 mb-3"
+        onkeydown="if(event.key==='Enter') login()">
+      <p id="login-error" class="text-red-400 text-sm mb-3 hidden">Wrong password</p>
+      <button onclick="login()" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium py-3 rounded-lg transition-colors">
+        Sign in
+      </button>
+    </div>
+  </div>
+
+  <!-- Dashboard -->
+  <div id="dashboard" class="hidden">
+    <!-- Header -->
+    <header class="bg-slate-800 border-b border-slate-700 px-6 py-4 flex items-center justify-between sticky top-0 z-40">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+        </div>
+        <div>
+          <h1 class="font-bold text-white text-sm">RWO GTM Command Center</h1>
+          <p id="last-updated" class="text-slate-400 text-xs">Loading...</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <div id="agent-status-bar" class="flex items-center gap-3"></div>
+        <button onclick="refreshData()" class="text-slate-400 hover:text-white transition-colors text-xs border border-slate-600 px-3 py-1.5 rounded-lg hover:border-slate-400">
+          Refresh
+        </button>
+        <button onclick="logout()" class="text-slate-400 hover:text-white text-xs">Sign out</button>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="max-w-7xl mx-auto px-6 py-8">
+
+      <!-- Signals Row -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+
+        <!-- P1 Alerts -->
+        <div class="bg-slate-800 rounded-xl border border-red-900/50 p-5">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="font-semibold text-white flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+              P1 — Act Today
+            </h2>
+            <span id="p1-count" class="text-xs bg-red-900/50 text-red-300 px-2 py-0.5 rounded-full">0</span>
+          </div>
+          <div id="p1-list" class="space-y-3 text-sm text-slate-300">
+            <p class="text-slate-500 text-xs">No P1 alerts today</p>
+          </div>
+        </div>
+
+        <!-- P2 Signals -->
+        <div class="bg-slate-800 rounded-xl border border-amber-900/50 p-5">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="font-semibold text-white flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+              P2 — Act This Week
+            </h2>
+            <span id="p2-count" class="text-xs bg-amber-900/50 text-amber-300 px-2 py-0.5 rounded-full">0</span>
+          </div>
+          <div id="p2-list" class="space-y-3 text-sm text-slate-300">
+            <p class="text-slate-500 text-xs">No P2 signals today</p>
+          </div>
+        </div>
+
+        <!-- P3 / Engagement -->
+        <div class="bg-slate-800 rounded-xl border border-slate-700 p-5">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="font-semibold text-white flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+              P3 — Monitor
+            </h2>
+            <span id="p3-count" class="text-xs bg-slate-700 text-slate-300 px-2 py-0.5 rounded-full">0</span>
+          </div>
+          <div id="p3-list" class="space-y-2 text-sm text-slate-400">
+            <p class="text-slate-500 text-xs">No P3 signals today</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content + Outreach Row -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+
+        <!-- Content Queue -->
+        <div class="bg-slate-800 rounded-xl border border-slate-700 p-5">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="font-semibold text-white flex items-center gap-2">
+              <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+              Content Queue
+            </h2>
+            <span id="content-count" class="text-xs bg-blue-900/50 text-blue-300 px-2 py-0.5 rounded-full">0 drafts</span>
+          </div>
+          <div id="content-list" class="space-y-3">
+            <p class="text-slate-500 text-xs">No drafts in queue</p>
+          </div>
+        </div>
+
+        <!-- Outreach Log -->
+        <div class="bg-slate-800 rounded-xl border border-slate-700 p-5">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="font-semibold text-white flex items-center gap-2">
+              <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              Outreach Sequences
+            </h2>
+            <span id="outreach-count" class="text-xs bg-green-900/50 text-green-300 px-2 py-0.5 rounded-full">0 generated</span>
+          </div>
+          <div id="outreach-list" class="space-y-3">
+            <p class="text-slate-500 text-xs">No sequences generated yet</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Briefing + Competitor Row -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+        <!-- Latest Briefing -->
+        <div class="bg-slate-800 rounded-xl border border-slate-700 p-5">
+          <h2 class="font-semibold text-white mb-4 flex items-center gap-2">
+            <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            Latest Briefing
+          </h2>
+          <div id="briefing-content" class="prose text-sm text-slate-300 max-h-96 overflow-y-auto">
+            <p class="text-slate-500 text-xs">No briefing yet — runs at 7:30am UTC</p>
+          </div>
+        </div>
+
+        <!-- Competitor Summary -->
+        <div class="bg-slate-800 rounded-xl border border-slate-700 p-5">
+          <h2 class="font-semibold text-white mb-4 flex items-center gap-2">
+            <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+            Competitor Pulse
+          </h2>
+          <div id="competitor-content" class="prose text-sm text-slate-300 max-h-96 overflow-y-auto">
+            <p class="text-slate-500 text-xs">No competitor report yet — runs Monday 6:30am UTC</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script>
+    let data = null;
+
+    async function checkAuth() {
+      const res = await fetch('/api/me');
+      const json = await res.json();
+      if (json.authenticated) {
+        showDashboard();
+      } else {
+        showLogin();
+      }
+    }
+
+    function showLogin() {
+      document.getElementById('login-screen').classList.remove('hidden');
+      document.getElementById('dashboard').classList.add('hidden');
+    }
+
+    function showDashboard() {
+      document.getElementById('login-screen').classList.add('hidden');
+      document.getElementById('dashboard').classList.remove('hidden');
+      refreshData();
+    }
+
+    async function login() {
+      const password = document.getElementById('password-input').value;
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: `password=${encodeURIComponent(password)}`
+      });
+      if (res.ok) {
+        document.getElementById('login-error').classList.add('hidden');
+        showDashboard();
+      } else {
+        document.getElementById('login-error').classList.remove('hidden');
+        document.getElementById('password-input').value = '';
+      }
+    }
+
+    async function logout() {
+      await fetch('/api/logout', { method: 'POST' });
+      showLogin();
+    }
+
+    async function refreshData() {
+      try {
+        const res = await fetch('/api/data');
+        if (res.status === 401) { showLogin(); return; }
+        data = await res.json();
+        renderAll();
+      } catch (e) {
+        console.error('Failed to fetch data', e);
+      }
+    }
+
+    function renderAll() {
+      if (!data) return;
+      renderAgentStatus(data.agentStatus);
+      renderSignals(data.signals);
+      renderContent(data.contentQueue);
+      renderOutreach(data.outreachLog);
+      renderBriefing(data.latestBriefing);
+      renderCompetitor(data.competitorSummary);
+      const ts = new Date(data.timestamp);
+      document.getElementById('last-updated').textContent = `Updated ${ts.toLocaleTimeString()}`;
+    }
+
+    function renderAgentStatus(agents) {
+      const bar = document.getElementById('agent-status-bar');
+      bar.innerHTML = agents.map(a => `
+        <div class="flex items-center gap-1.5 text-xs text-slate-400" title="${a.name}: ${a.lastRun ? new Date(a.lastRun).toLocaleString() : 'Never run'}">
+          <span class="w-2 h-2 rounded-full status-${a.status}"></span>
+          <span class="hidden sm:inline">${a.name.split(' ')[0]}</span>
+        </div>
+      `).join('');
+    }
+
+    function renderSignals(signals) {
+      if (!signals) return;
+
+      const renderList = (items, containerId, countId, emptyText) => {
+        const container = document.getElementById(containerId);
+        const countEl = document.getElementById(countId);
+        countEl.textContent = items.length;
+        if (!items.length) {
+          container.innerHTML = `<p class="text-slate-500 text-xs">${emptyText}</p>`;
+          return;
+        }
+        container.innerHTML = items.map(item => `
+          <div class="border-l-2 border-slate-600 pl-3">
+            <p class="font-medium text-white text-xs">${item.account}</p>
+            <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">${item.detail.split('\n').slice(0,3).join(' ').substring(0,200)}</p>
+          </div>
+        `).join('');
+      };
+
+      renderList(signals.p1 || [], 'p1-list', 'p1-count', 'No P1 alerts today');
+      renderList(signals.p2 || [], 'p2-list', 'p2-count', 'No P2 signals today');
+      renderList(signals.p3 || [], 'p3-list', 'p3-count', 'No P3 signals today');
+    }
+
+    function renderContent(queue) {
+      const container = document.getElementById('content-list');
+      const countEl = document.getElementById('content-count');
+      countEl.textContent = `${queue.length} draft${queue.length !== 1 ? 's' : ''}`;
+      if (!queue.length) {
+        container.innerHTML = '<p class="text-slate-500 text-xs">No drafts in queue</p>';
+        return;
+      }
+      container.innerHTML = queue.map(item => `
+        <div class="border border-slate-700 rounded-lg p-3">
+          <div class="flex items-start justify-between gap-2">
+            <p class="text-xs font-medium text-white leading-snug flex-1">${item.hook || item.title}</p>
+            <span class="text-xs text-blue-400 shrink-0">${item.persona.split(' ')[0] || ''}</span>
+          </div>
+          <p class="text-xs text-slate-500 mt-1">${item.date ? new Date(item.date).toLocaleDateString() : ''}</p>
+        </div>
+      `).join('');
+    }
+
+    function renderOutreach(log) {
+      const container = document.getElementById('outreach-list');
+      const countEl = document.getElementById('outreach-count');
+      countEl.textContent = `${log.length} generated`;
+      if (!log.length) {
+        container.innerHTML = '<p class="text-slate-500 text-xs">No sequences generated yet</p>';
+        return;
+      }
+      container.innerHTML = log.map(row => `
+        <div class="flex items-center justify-between border border-slate-700 rounded-lg p-3">
+          <div>
+            <p class="text-xs font-medium text-white">${row.account}</p>
+            <p class="text-xs text-slate-400">${row.persona} · ${row.date}</p>
+          </div>
+          <span class="text-xs px-2 py-0.5 rounded-full ${statusBadge(row.status)}">${row.status}</span>
+        </div>
+      `).join('');
+    }
+
+    function statusBadge(status) {
+      const map = {
+        'Generated': 'bg-slate-700 text-slate-300',
+        'Replied': 'bg-green-900/50 text-green-300',
+        'Meeting booked': 'bg-blue-900/50 text-blue-300',
+        'No response': 'bg-red-900/50 text-red-300',
+        'Active': 'bg-amber-900/50 text-amber-300',
+      };
+      return map[status] || 'bg-slate-700 text-slate-300';
+    }
+
+    function renderBriefing(html) {
+      const container = document.getElementById('briefing-content');
+      if (!html) {
+        container.innerHTML = '<p class="text-slate-500 text-xs">No briefing yet — runs at 7:30am UTC</p>';
+        return;
+      }
+      container.innerHTML = html;
+    }
+
+    function renderCompetitor(html) {
+      const container = document.getElementById('competitor-content');
+      if (!html) {
+        container.innerHTML = '<p class="text-slate-500 text-xs">No competitor report yet — runs Monday 6:30am UTC</p>';
+        return;
+      }
+      container.innerHTML = html;
+    }
+
+    // Auto-refresh every 60 seconds
+    setInterval(refreshData, 60000);
+
+    // Init
+    checkAuth();
+  </script>
+</body>
+</html>
