@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const { marked } = require('marked');
+const { spawn } = require('child_process');
 
 require('dotenv').config({ path: path.join(__dirname, '../.env') });
 
@@ -170,6 +171,29 @@ function getCompetitorSummary() {
   return match ? marked(match[0]) : marked(content.slice(0, 800));
 }
 
+// --- Job Runner ---
+
+const jobs = {};
+
+function runClaude(prompt, jobId) {
+  const job = { id: jobId, status: 'running', output: '', started: new Date().toISOString() };
+  jobs[jobId] = job;
+
+  const proc = spawn('claude', ['--dangerously-skip-permissions', '-p', prompt], {
+    cwd: REPO,
+    env: { ...process.env, HOME: process.env.HOME || '/home/rwo' },
+  });
+
+  proc.stdout.on('data', d => { job.output += d.toString(); });
+  proc.stderr.on('data', d => { job.output += d.toString(); });
+  proc.on('close', code => {
+    job.status = code === 0 ? 'done' : 'error';
+    job.finished = new Date().toISOString();
+  });
+
+  return job;
+}
+
 // --- Routes ---
 
 app.post('/api/login', (req, res) => {
@@ -200,6 +224,47 @@ app.get('/api/data', requireAuth, (req, res) => {
     competitorSummary: getCompetitorSummary(),
     timestamp: new Date().toISOString(),
   });
+});
+
+// --- Agent trigger endpoints ---
+
+app.post('/api/run/account-monitor', requireAuth, (req, res) => {
+  const id = `account-monitor-${Date.now()}`;
+  runClaude('Run the account monitor agent for today. Scan all 35 Tier 1 accounts for signals. Write all output to signals/ and outputs/ directories.', id);
+  res.json({ jobId: id });
+});
+
+app.post('/api/run/content-intel', requireAuth, (req, res) => {
+  const id = `content-intel-${Date.now()}`;
+  runClaude('Run the content intelligence agent. Write all drafts and intelligence to outputs/content/ and signals/content/ directories.', id);
+  res.json({ jobId: id });
+});
+
+app.post('/api/run/competitor-intel', requireAuth, (req, res) => {
+  const id = `competitor-intel-${Date.now()}`;
+  runClaude('Run the competitor intelligence agent for this week. Monitor all 9 competitors and write the weekly report to outputs/competitor/.', id);
+  res.json({ jobId: id });
+});
+
+app.post('/api/run/briefing', requireAuth, (req, res) => {
+  const id = `briefing-${Date.now()}`;
+  runClaude('Run the orchestrator daily briefing process. Read all signal files from today, compose the briefing, write to outputs/briefings/, and send to Telegram using credentials in .env.', id);
+  res.json({ jobId: id });
+});
+
+app.post('/api/run/outreach', requireAuth, (req, res) => {
+  const { account, persona, context: ctx } = req.body;
+  if (!account || !persona) return res.status(400).json({ error: 'account and persona required' });
+  const id = `outreach-${Date.now()}`;
+  const prompt = `Generate outreach for ${account} — ${persona}${ctx ? ` — context: ${ctx}` : ''}. Follow the full cold outreach agent process in .claude/agents/rwo-cold-outreach.md.`;
+  runClaude(prompt, id);
+  res.json({ jobId: id });
+});
+
+app.get('/api/job/:id', requireAuth, (req, res) => {
+  const job = jobs[req.params.id];
+  if (!job) return res.status(404).json({ error: 'Job not found' });
+  res.json(job);
 });
 
 // Telegram webhook — handle button callbacks (callback_query)

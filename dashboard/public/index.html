@@ -150,6 +150,67 @@
         </div>
       </div>
 
+      <!-- Quick Actions -->
+      <div class="bg-slate-800 rounded-xl border border-slate-700 p-5 mb-8">
+        <h2 class="font-semibold text-white mb-4 flex items-center gap-2">
+          <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          Quick Actions
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- Agent triggers -->
+          <div class="space-y-3">
+            <p class="text-xs text-slate-400 font-medium uppercase tracking-wide">Run Agents</p>
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="runAgent('account-monitor')" class="action-btn bg-slate-700 hover:bg-slate-600 text-white text-xs px-3 py-2.5 rounded-lg transition-colors flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-amber-400"></span> Account Monitor
+              </button>
+              <button onclick="runAgent('content-intel')" class="action-btn bg-slate-700 hover:bg-slate-600 text-white text-xs px-3 py-2.5 rounded-lg transition-colors flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-blue-400"></span> Content Intel
+              </button>
+              <button onclick="runAgent('competitor-intel')" class="action-btn bg-slate-700 hover:bg-slate-600 text-white text-xs px-3 py-2.5 rounded-lg transition-colors flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-orange-400"></span> Competitor Intel
+              </button>
+              <button onclick="runAgent('briefing')" class="action-btn bg-blue-700 hover:bg-blue-600 text-white text-xs px-3 py-2.5 rounded-lg transition-colors flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-white"></span> Send Briefing
+              </button>
+            </div>
+            <div id="agent-job-status" class="hidden text-xs text-slate-400 bg-slate-900 rounded-lg p-3">
+              <div class="flex items-center gap-2">
+                <svg id="job-spinner" class="w-3 h-3 animate-spin text-blue-400" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path></svg>
+                <span id="job-status-text">Running...</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outreach generator -->
+          <div class="space-y-3">
+            <p class="text-xs text-slate-400 font-medium uppercase tracking-wide">Generate Outreach</p>
+            <input id="outreach-account" type="text" placeholder="Account name (e.g. HSBC)"
+              class="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white text-xs placeholder-slate-400 focus:outline-none focus:border-blue-500">
+            <select id="outreach-persona" class="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white text-xs focus:outline-none focus:border-blue-500">
+              <option value="">Select persona...</option>
+              <option value="CHRO">CHRO / Chief People Officer</option>
+              <option value="Head of TA">Head of Talent Acquisition</option>
+              <option value="CPO">CPO / Chief Procurement Officer</option>
+              <option value="HR Director">HR Director</option>
+            </select>
+            <input id="outreach-context" type="text" placeholder="Trigger context (optional — e.g. new appointment)"
+              class="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-white text-xs placeholder-slate-400 focus:outline-none focus:border-blue-500">
+            <button onclick="generateOutreach()" class="w-full bg-green-700 hover:bg-green-600 text-white text-xs px-3 py-2.5 rounded-lg transition-colors font-medium">
+              Generate Sequence
+            </button>
+            <div id="outreach-job-status" class="hidden text-xs text-slate-400 bg-slate-900 rounded-lg p-3">
+              <div class="flex items-center gap-2">
+                <svg class="w-3 h-3 animate-spin text-green-400" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path></svg>
+                <span id="outreach-status-text">Generating sequence — takes 2–3 minutes...</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <!-- Briefing + Competitor Row -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
@@ -346,6 +407,71 @@
         return;
       }
       container.innerHTML = html;
+    }
+
+    // --- Agent actions ---
+
+    async function runAgent(type) {
+      const statusEl = document.getElementById('agent-job-status');
+      const statusText = document.getElementById('job-status-text');
+      const labels = {
+        'account-monitor': 'Account Monitor running — takes 5–10 mins...',
+        'content-intel': 'Content Intel running — takes 3–5 mins...',
+        'competitor-intel': 'Competitor Intel running — takes 5–10 mins...',
+        'briefing': 'Sending briefing to Telegram...',
+      };
+      statusEl.classList.remove('hidden');
+      statusText.textContent = labels[type] || 'Running...';
+
+      const res = await fetch(`/api/run/${type}`, { method: 'POST' });
+      const { jobId } = await res.json();
+      pollJob(jobId, statusEl, statusText);
+    }
+
+    async function generateOutreach() {
+      const account = document.getElementById('outreach-account').value.trim();
+      const persona = document.getElementById('outreach-persona').value;
+      const context = document.getElementById('outreach-context').value.trim();
+
+      if (!account || !persona) {
+        alert('Please enter an account name and select a persona.');
+        return;
+      }
+
+      const statusEl = document.getElementById('outreach-job-status');
+      const statusText = document.getElementById('outreach-status-text');
+      statusEl.classList.remove('hidden');
+      statusText.textContent = `Generating sequence for ${account} (${persona}) — takes 2–3 mins...`;
+
+      const res = await fetch('/api/run/outreach', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ account, persona, context }),
+      });
+      const { jobId } = await res.json();
+      pollJob(jobId, statusEl, statusText, () => {
+        statusText.textContent = `✓ Sequence ready — check outputs/outreach/sequences/ on the server`;
+        refreshData();
+      });
+    }
+
+    function pollJob(jobId, statusEl, statusText, onDone) {
+      const interval = setInterval(async () => {
+        const res = await fetch(`/api/job/${jobId}`);
+        const job = await res.json();
+        if (job.status === 'done') {
+          clearInterval(interval);
+          statusText.textContent = '✓ Done — refreshing data...';
+          setTimeout(() => {
+            statusEl.classList.add('hidden');
+            refreshData();
+            if (onDone) onDone();
+          }, 2000);
+        } else if (job.status === 'error') {
+          clearInterval(interval);
+          statusText.textContent = '✗ Something went wrong — check the server logs.';
+        }
+      }, 5000);
     }
 
     // Auto-refresh every 60 seconds
